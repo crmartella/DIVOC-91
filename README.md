@@ -33,6 +33,7 @@ Team DIVOC-91:  Chris Martella,  Taylor Peterson,  Isaac Pingel, Thomas Clemons
 | **Analysis & Plotting:** | | 
 | **covid_analysis_plots.ipynb** | Reads 2021-2023 pulse survey data all columns file and plots **COVID and Anxious, Worry, Interest Level, and Down** responses |
 | **feelings_analysis_plots.ipynb** | Reads 2021-2023 pulse survey data all columns file and plots **Anxious, Worry, Interest Level, and Down** responses |
+| | |
 | **Create Survey Analysis Data Files:** | | 
 | **create_2021_analysis_data_file.ipynb** | Reads 2021 HPS files to create the **pulse2021_survey_data.csv** |
 | | and **pulse2021_survey_data_all_cols.csv** data files | 
@@ -40,6 +41,7 @@ Team DIVOC-91:  Chris Martella,  Taylor Peterson,  Isaac Pingel, Thomas Clemons
 | | and **pulse2022_survey_data_all_cols.csv** data files |  
 | **create_2023_analysis_data_file.ipynb** | Reads 2023 HPS files to create the **pulse2023_survey_data.csv** |  
 | | and **pulse2023_survey_data_all_cols.csv** data files | 
+
 
 **HPS Public Use Files (PUF) contained in the Resources folder:** 
 | **Survey File** | **Description** | **Survey Period** | 
@@ -62,8 +64,9 @@ Team DIVOC-91:  Chris Martella,  Taylor Peterson,  Isaac Pingel, Thomas Clemons
 | **pulse2023_puf_60_2023_3Q.csv** | 2023 3Q U.S. Census Bureau HPS | 7/26/2023 - 8/7/2023 | 
 | **pulse2023_puf_63_2023_4Q.csv** | 2023 4Q U.S. Census Bureau HPS | 10/18/2023 - 10/30/2023 | 
 
-- **Full Year Survey data files created by notebooks:**
-- Note:  These files will be overlayed if you run the create analysis data file notebooks
+
+**Full Year Survey data files created by notebooks:**
+Note:  These files will be overlayed if you run the create analysis data file notebooks
 
 | **Survey File** | **Description** | **Created By** | 
 | --- | :-: | :-: |
@@ -90,59 +93,59 @@ Team DIVOC-91:  Chris Martella,  Taylor Peterson,  Isaac Pingel, Thomas Clemons
 - Note: All survey data files are provided in the Resources folder.  You don't need to run the notebooks to create the pulse survey data files unless you make some changes to the create data file notebooks
 
 
-## Group Project
+## Group Project Analysis
 
-### Goals/Questions to be addressed
+### 1. Goals/Questions to be addressed
 - Question #1: Is there any correlation between the number of positive COVID-19 infections and anxiety / fear over the three (3) year sample period?
 - Question #2: What, if any, correlation exists among having COVID-19 and the feeling of worry or mailaize?  
 - Question #3: Does having COVID-19 increase or decrease a respondent's level of interest in everyday activities?
 - Question #4: Does having COVID-19 increase or decrease a respondent's feeling of depression or hopelessness? 
 
-### Overview of data collection, cleanup and exploration process
+### 2. Overview of data collection, cleanup and exploration process
 - Data sourced from the U.S. Census Bureau’s HPS bi-weekly survey 2020-2023.
 - Surveys are a collaborative effort of numerous governmental agencies (CDC, FDA, HHS, NCHS).
 - The HPS columns changed significantly (from 81 to over 250 questions), survey questions were removed and others added, over the many survey phases through the pandemic lifecycle.
 - These changes in survey questions resulted in significant cleaning and organizing of the datasets and dataframes to create uniform and consistent responses to work with.
 - Our cleaning and standardization of the HPS survey data focused on creating a uniform datasets and response categories over calendar quarters from 2020-2023 (most notably the removal of early 2020 responses as the Survey data and questions were in their infancy).
 
-### Approach taken to achieve goals
+### 3. Approach taken to achieve goals
 1. **Dataset Selection and Modification**
     - Randomized the selection of bi-weekly survey responses over annual quarters.
     - Imported each selected .CSV survey response file into our project repository.
     - Standardized and concatenated quarterly .CSV survey files by year into annual databases.
-2. Cleaning and Refining
+2. **Cleaning and Refining**
     - Analyze survey columns to check for completeness and quality of responses
     - Identify and clean columns to ensure consistency
     - Merge similar responses by column and ensure data types are consistent (int, datetime, etc.)
-3. Analysis / Results
+3. **Analysis / Results**
     - Graphed full year dataframes to make comparisons
     - Refined and regraphed based on results
-4. Draw Conclusions
+4. **Draw Conclusions**
     - Made observations based on analysis
 
-## Results/Conclusions
+## Group Project Analysis Results/Conclusions
 
-### Anxiety and COVID-19
+### 1. Anxiety and COVID-19
 - Of the survey sample, regardless of COVID-19 status, those reporting having some level of anxiety are greater than those that reported no anxiety.
 - It appears that having COVID-19 does not materially change the percentage of those expressing some feeling of anxiety as compared to those that report not being anxious.    
 - A larger percentage of those with COVID-19 experience anxiety than those that have not contracted COVID-19.  
 
-### Worry and COVID-19
+### 2. Worry and COVID-19
 - It appears that regardless of COVID-19 status, respondents not experiencing worry exceeded those experiencing worry.
 - Based on the visual plotting, the dataset and levels of worry, whether or not the respondent has COVID-19, are approaching the median.  
 - Unlike anxiety, of those with COVID-19, the respondents reporting no worry sometimes exceed those experiencing some worry after the infected population increases over the non-infected population numbers.   
 
-### Interest Level and COVID-19
+### 3. Interest Level and COVID-19
 - It appears that regardless of COVID-19 status, respondents not experiencing loss of interest exceeded those experiencing interest in doing daily activities.
 - Although interest is highly similar to feelings of worry in those who reported to not have COVID-19, we can see that interest levels are slowly increasing the gap between those who are not interested in daily activities, amongst COVID-19 positive respondents. Feelings of interest stay above those who experienced loss of interest, with feelings of interest increasing more during the third quarter of 2023.
 - Just like our graphs of anxiety and worry, we see that towards the end of 2022 and going into 2023, the responses are approaching the median as the pandemic is slowing down.
 
-### Depression (Down) and COVID-19
+### 4. Depression (Down) and COVID-19
 - Visually, it appears that COVID-19 did not increase feelings of depression to the point where they surpassed those reporting not having intense feelings of depression.
 - Compared to levels of anxiety experienced through COVID-19, those who experienced feelings of depression stayed below those that did not experience any feelings of depression. This was true regardless of COVID-19 status, showing no drastic correlation between the two.
 - It appears that of the respondents that reported a positive COVID-19 status, depression follows closely with loss of interest. In fact, their trajectories, either with or without COVID-19, are nearly identical.
 
-### Summary
+### Group Project Analysis Summary
 - There does not appear to be a correlation between COVID-19 infections and depression, anxiety, lack of interest in everyday tasks, and worsening mental health.  The relationship remained constant over the survey period.
 - Regardless of COVID-19 Status, the resultant effect on mental health approaches a similar median value and trajectory.
 - Feelings of anxiety is the only factor seen to have stayed above no feelings of anxiety throughout the three year period. People are generally anxious, with those having a positive COVID-19 status gradually increasing more, especially towards the end of 2023.
