@@ -173,6 +173,9 @@ Note:  These files will be overlayed if you run the create analysis data file no
 3. A portion of the HPS included a variety of questions about children’s educational access in the home after the effects of COVID-19 (the shift to distanced learning, computer availability in the home for educational purposes, accessible internet services, and homeschooling). We focused strictly on adults for our analysis, but wIth the added stress of children and their education style drastically changing, could this result in a correlation to their mental well-being?
 4. Stimulus payments were distributed throughout the pandemic. Would the portion of the population that received these see a boost to their mental states and a decrease in stress levels?
 
+### Group Project Analysis Presentation
+- **PRESENTATION PDF VERSION DIVOC_91_AI_Bootcamp_Project_1_Presentation (1).pdf** is available to be downloaded to walkthrough our analysis in presentation format. 
+
 
 ## Help
 
