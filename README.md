@@ -1,13 +1,13 @@
-# Coronavirus Disease 2019 (COVID-19) Effects on Mental Health
+# Coronavirus (COVID-19) Effects on Mental Health
 This is a group project the MSU AI Bootcamp.  For this project, we worked as a group to find and analyze a dataset of our choice.
 We selected the U.S. Census Bureau Household Pulse Survey (HPS) from 2021-2023 to analyze COVID-19 and it's effects on Anxiety, Worry,
 Interest Level, and Depression (Down).
 
-Team DIVOC-91:  Chris Martella,  Taylor Peterson,  Isaac Pingel, Thomas Clemons
+Team DIVOC-91:  Tom Clemons, Chris Martella,  Taylor Peterson,  Isaac Pingel 
 
 ## Description
 
-**Coronavirus Disease 2019 (COVID-19) Effects on Mental Health**
+**Coronavirus (COVID-19) Effects on Mental Health**
 - Our goals were to identify the effects of COVID-19, and the pandemic generally, on mental health of the U.S. Population based upon the standardized survey and reporting of the U.S. Census Bureau HPS 2021-2023.
 - The intent of our analysis is to provide insight for healthcare professionals, medical institutions, and pharmaceutical companies on COVID-19 and it's effects on Anxiety, Worry, Interest Level, and Depression.   
 - Our graph and dataframe outputs provide evidence of any correlations between historical contraction of COVID-19 and frequency / intensity of Anxiety, Worry, Interest Level, and Depression.
@@ -65,7 +65,7 @@ Team DIVOC-91:  Chris Martella,  Taylor Peterson,  Isaac Pingel, Thomas Clemons
 | **pulse2023_puf_63_2023_4Q.csv** | 2023 4Q U.S. Census Bureau HPS | 10/18/2023 - 10/30/2023 | 
 
 
-**Full Year Survey data files created by notebooks:**
+**Full Year Survey data files created by notebooks:** 
 Note:  These files will be overlayed if you run the create analysis data file notebooks
 
 | **Survey File** | **Description** | **Created By** | 
@@ -117,7 +117,7 @@ Note:  These files will be overlayed if you run the create analysis data file no
     - Analyze survey columns to check for completeness and quality of responses
     - Identify and clean columns to ensure consistency
     - Merge similar responses by column and ensure data types are consistent (int, datetime, etc.)
-3. **Analysis / Results**
+3. **Graphing and Analysis**
     - Graphed full year dataframes to make comparisons
     - Refined and regraphed based on results
 4. **Draw Conclusions**
@@ -126,21 +126,33 @@ Note:  These files will be overlayed if you run the create analysis data file no
 ## Group Project Analysis Results/Conclusions
 
 ### 1. Anxiety and COVID-19
+
+<img src="Resources/anxiety_and_covid.png" alt="Anxiety and COVID-19 graph" width=100%>
+
 - Of the survey sample, regardless of COVID-19 status, those reporting having some level of anxiety are greater than those that reported no anxiety.
 - It appears that having COVID-19 does not materially change the percentage of those expressing some feeling of anxiety as compared to those that report not being anxious.    
 - A larger percentage of those with COVID-19 experience anxiety than those that have not contracted COVID-19.  
 
 ### 2. Worry and COVID-19
+
+<img src="Resources/worry_and_covid.png" alt="Worry and COVID-19 graph" width=100%>
+
 - It appears that regardless of COVID-19 status, respondents not experiencing worry exceeded those experiencing worry.
 - Based on the visual plotting, the dataset and levels of worry, whether or not the respondent has COVID-19, are approaching the median.  
 - Unlike anxiety, of those with COVID-19, the respondents reporting no worry sometimes exceed those experiencing some worry after the infected population increases over the non-infected population numbers.   
 
 ### 3. Interest Level and COVID-19
+
+<img src="Resources/interest_level_and_covid.png" alt="Interest Level and COVID-19 graph" width=100%>
+
 - It appears that regardless of COVID-19 status, respondents not experiencing loss of interest exceeded those experiencing interest in doing daily activities.
 - Although interest is highly similar to feelings of worry in those who reported to not have COVID-19, we can see that interest levels are slowly increasing the gap between those who are not interested in daily activities, amongst COVID-19 positive respondents. Feelings of interest stay above those who experienced loss of interest, with feelings of interest increasing more during the third quarter of 2023.
 - Just like our graphs of anxiety and worry, we see that towards the end of 2022 and going into 2023, the responses are approaching the median as the pandemic is slowing down.
 
 ### 4. Depression (Down) and COVID-19
+
+<img src="Resources/depression_and_covid.png" alt="Depression (Down) and COVID-19 graph" width=100%>
+
 - Visually, it appears that COVID-19 did not increase feelings of depression to the point where they surpassed those reporting not having intense feelings of depression.
 - Compared to levels of anxiety experienced through COVID-19, those who experienced feelings of depression stayed below those that did not experience any feelings of depression. This was true regardless of COVID-19 status, showing no drastic correlation between the two.
 - It appears that of the respondents that reported a positive COVID-19 status, depression follows closely with loss of interest. In fact, their trajectories, either with or without COVID-19, are nearly identical.
